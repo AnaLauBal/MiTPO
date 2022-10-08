@@ -1,0 +1,144 @@
+
+.contcss{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 15% 80% 70% 55% 55% 55% 10%;
+    grid-template-areas:    "cabe navi"
+                            "secc1 secc1"
+                            "secc2 secc2"
+                            "evento1 evento1"
+                            "evento2 evento2"
+                            "formulario formulario"
+                            "pie pie";
+    height: 100vh;
+    row-gap: 0;
+    max-width: 100%;
+}
+
+.contcss-cabe{
+    grid-area: cabe;
+    display: flex;
+    align-items: flex-end;
+}
+
+.contcss-cabe > h1{
+    font-family: 'Satisfy', cursive;
+    font-size: 190%;
+    color: #c9e265;
+}
+
+.contcss-navi{
+    grid-area: navi;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navi-items{
+    color: green;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.navi-items:hover{
+    color: white;
+    background-color: #c9e265;
+}
+
+.navi-items2{
+    color: goldenrod;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.navi-items2:hover{
+    color:greenyellow
+}
+
+.contcss-secc1{
+    grid-area: secc1;
+    position: relative;
+    overflow: hidden;
+    border-top: 1px dashed green;
+}
+
+.quiensos{
+    position: relative;
+    font-weight: bolder;
+    opacity: 1;
+    padding: 150px;
+    z-index: 2;
+    text-align: center;
+    font-size: 110%;
+}
+
+.contcss-secc1 img{
+    position: absolute;
+    left: 0;
+    top: 1%;
+    width: 100%;
+    opacity:0.4
+}
+
+.contcss-secc2{
+    grid-area: secc2;
+}
+
+.contcss-pie{
+    grid-area: pie;
+    background-color: gainsboro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+} 
+
+.pie a{ padding: 20px;}  
+
+.tablamenu{
+    width: 100%;
+    height: 100%;
+    border-collapse: separate;
+    border-top: 1px dashed green;
+    text-align: center;
+}
+
+th, td{
+    padding: 15px;
+    width: 15px;
+}
+
+th{
+    color: green;
+    background-color: gainsboro;;
+}
+
+.seccioneventos1{
+    grid-area: evento1;
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: goldenrod;
+    justify-content: space-around;
+    align-content: space-around;
+    text-align: center;
+}
+
+.seccioneventos2{
+    grid-area: evento2;
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: gainsboro;
+    margin-top: 5px;
+    justify-content: space-around;
+    align-content: space-around;
+    text-align: center;
+}
+
+.contcss-formulario{
+    grid-area: formulario;
+    margin-top: 25px;
+}
+
+
+
+  
